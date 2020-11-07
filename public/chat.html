@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>takeAway</title>
+  </head>
+  <body>
+    <div class="chat-container">
+      <header class="chat-header">
+        <h1 id="room-name"></h1>
+        <ul id="users"></ul>
+      </header>
+      <main class="chat-main">
+        <div class="chat-messages"></div>
+        <div id="holder" class="invisible"></div>
+        <div id="calculation">
+          <button class="btn-game" id="less" type="button">-1</button>
+          <button class="btn-game" id="zero" type="button">0</button>
+          <button class="btn-game" id="more" type="button">+1</button>
+        </div>
+        
+      </main>
+      <div id="chat-form-container" class="chat-form-container">
+
+        <form id="chat-form">
+          <input id="msg" type="number" placeholder="Enter Message" required autocomplete="off"/>
+          <button class="btn"><i class="fas fa-paper-plane"></i> Send</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
